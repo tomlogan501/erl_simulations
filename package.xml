@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>erl_simulations</name>
+  <version>0.0.1</version>
+  <description>The erl_simulations package</description>
+  <maintainer email="thomas.simon@ensta-paris.fr">Thomas SIMON</maintainer>
+
+  <license>BSD</license>
+
+  <author email="thomas.simon@ensta-paris.fr">Thomas SIMON</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend>gazebo_ros</exec_depend>
+  <export>
+    <gazebo_ros gazebo_model_path="${prefix}/models:${gazebo_model_path}"/>
+    <gazebo_ros gazebo_media_path="${prefix}/models:${gazebo_media_path}"/>
+  </export>
+
+</package>

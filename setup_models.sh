@@ -1,0 +1,4 @@
+#/bin/bash
+
+export GAZEBO_MODEL_PATH=$PWD/models:$GAZEBO_MODEL_PATH
+echo $GAZEBO_MODEL_PATH
