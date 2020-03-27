@@ -1,6 +1,8 @@
 # erl_simulations
 ROS Package for the ERL competitions (include worlds and models)
 
+![image info](img/camera.jpg)
+
 ## Setup models
 Not sure if the package will export correctly the path of models. Executes the script setup_model.sh if you have an error.
 
