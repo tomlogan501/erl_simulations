@@ -65,6 +65,12 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
       </node>
   </group>
 
+      <include file="$(find husky_control)/launch/control.launch">
+        <arg name="multimaster" value="false"/>
+        <arg name="laser_enabled" value="$(arg laser_enabled)"/>
+        <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
+      </include>
+
     <!-- Spawn robot in gazebo -->
     <node name="spawn_husky_model" pkg="gazebo_ros" type="spawn_model"
         args="-x $(arg x)
