@@ -14,9 +14,9 @@
     <arg name="debug" value="false"/>
   </include>
 
-  <param name="robot_description" command="$(find xacro)/xacro '$(find husky_description)/urdf/husky.urdf.xacro'" />
+  <param name="robot_description" command="$(find xacro)/xacro '$(find erl_simulations)/models/husky.urdf.xacro'" />
 
-  <include file="$(find husky_gazebo)/launch/spawn_husky.launch">
+  <include file="$(find erl_simulations)/launch/spawn_husky.launch">
     <arg name="x" value="-10.0"/>
     <arg name="y" value="-15.0"/>
   </include>
